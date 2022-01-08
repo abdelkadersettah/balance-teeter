@@ -1,0 +1,21 @@
+@import "../../../assets/styles/variables/colors";
+.btn {
+  padding: 0.3rem 01.3rem;
+  background: transparent;
+  font-size: 01rem;
+  border-color: transparent;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.reset {
+  background-color: $red;
+  color: $white;
+}
+.play {
+  background-color: $green;
+  color: $white;
+}

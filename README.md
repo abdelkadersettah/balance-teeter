@@ -2,69 +2,61 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to
 
-In the project directory, you can run:
+**Running the development server**
 
-### `npm start`
+    $ npm install && npm start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Running the test runner**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    $ npm test
 
-### `npm test`
+**Building the application for production**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    $ npm run build
 
-### `npm run build`
+## Todos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Writing tests
+2. Increasing game speed only based on the successful rounds
+3. Implementing other bonus problems
+4. Showing the gameover reason to the user
+5. Prevent the game from being overed by stopping the mistaken element choice
+6. Performance monitoring
+7. Lots of bug fixes (including functional and browser compatibility issues)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this project, we expect you to create a standing in balance teeter totter.
 
-### `npm run eject`
+- At the right side of teeter totter, there will be randomly placing objects with random weights. On the left side, there will be nothing but there will be
+  objects falling from top to bottom. According to weight on the sides, teeter
+  totter will be bending towards to heavy side.
+- You will be managing those object’s placement by arrow keys to keep teeter
+  totter on balance.
+- Your task is, keeping this balance as much as you can.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Rules:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The width of teeter totter will be 10m .
+- There will be three different object type with different weights. Triangle,
+  circle and rectangle.
+- On the left side , only falling objects can be placed. You will be controlling
+  objects with arrow keys . The placement of objects should keep balance as its
+  best.
+- On the right side , there will be randomly placing objects, which created
+  randomly and placed randomly.
+- The weights will be between 1 and 10 .
+- The bending speed will be increasing or decreasing according to balance.
+- The maximum bending percentage is %30 , if it exceeds this limit, simulation
+  ends.
+- If there is extra 20kgm (10kg \* 2m) on the one side, simulation ends
+  immediately.
+- Distance from center will be considered as factor when placing the objects to
+  keep teeter totter on balance.
+- There will be pause and continue feature. The simulation can be paused and
+  can be resumed last paused state.
+- Vuex store usage expected.
+- Component design expected.
+- You can use any color or styling.
