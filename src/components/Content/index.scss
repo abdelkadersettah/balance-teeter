@@ -1,0 +1,14 @@
+/*=====================================
+=            Header Styles            =
+=====================================*/
+
+.content {
+	z-index: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	& > * {
+		height: 100%;
+	}
+}

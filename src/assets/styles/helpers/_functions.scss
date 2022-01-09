@@ -1,3 +1,0 @@
-@function rem($input, $base: 16) {
-  @return ($input / $base) * 1rem;
-}
