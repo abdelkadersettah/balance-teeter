@@ -1,0 +1,42 @@
+.element {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 0.6em;
+  height: 0.6em;
+  border: 0.05em solid rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+  color: rgba(0, 0, 0);
+  text-align: center;
+  line-height: 0.3em;
+  font-weight: 700;
+  // padding: 0.1em;
+
+  &__inner {
+    display: block;
+    font-size: 0.4em;
+    transform: translate(0%, 50%);
+  }
+  &--circle {
+    border-radius: 50%;
+    background-color: blue;
+  }
+  &--triangle {
+    border-width: 0 0.5em 0.5em 0.5em;
+    width: 0;
+    border-color: transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    .element__inner {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 8%);
+      line-height: 2.75em;
+    }
+  }
+  &--rectangle {
+    background-color: orange;
+  }
+}
+.inner {
+}

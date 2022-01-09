@@ -1,8 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "../action/action";
+import { combineReducers } from "redux";
+import seeSawReducer from "../seeSawReducer";
 
-export default configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+// export default configureStore({
+//   reducer: {
+//     seeSaw: seeSawReducer,
+//   },
+// });
+const reducers = combineReducers({
+  seeSaw: seeSawReducer,
 });
+export default reducers;

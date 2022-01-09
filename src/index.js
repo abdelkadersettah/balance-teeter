@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
 import { Provider } from "react-redux";
-import store from "./reducer/store/store";
+import { createStore } from "redux";
+import reducers from "./reducer/store/store";
+
+const store = createStore(reducers);
 
 ReactDOM.render(
   <Provider store={store}>

@@ -1,6 +1,6 @@
-import "./style.scss"
+import "./style.scss";
 const Fulcrum = () => {
-    return (  );
-}
- 
+  return <div className="fulcrum"></div>;
+};
+
 export default Fulcrum;
